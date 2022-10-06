@@ -53,7 +53,7 @@ const titleStyle = {
     flex: '1',
     color: 'rgb(225, 174, 6)',
     fontSize: '7vh',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
 }
 
 export default Header;
