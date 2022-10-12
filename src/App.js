@@ -5,6 +5,7 @@ import {
 import Header from "./components/Header/index"
 import Home from "./Pages/Home/index"
 import Coin from "./Pages/Coin/index"
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} exact/>
           <Route path='/coin/:id' element={<Coin />}/>
+          <Route path='/dashboard' element={<Dashboard />}/>
         </Routes>
       </main>
   );
