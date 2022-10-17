@@ -13,7 +13,7 @@ function App() {
         <Header/>
         <Routes>
           <Route path='/' element={<Home />} exact/>
-          <Route path='/coin/:id' element={<Coin />}/>
+          <Route path='/coins/:id' element={<Coin />}/>
           <Route path='/dashboard' element={<Dashboard />}/>
         </Routes>
       </main>
