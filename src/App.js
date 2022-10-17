@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import {
   Route, Routes
@@ -6,10 +7,13 @@ import Header from "./components/Header/index"
 import Home from "./Pages/Home/index"
 import Coin from "./Pages/Coin/index"
 import Dashboard from './components/Dashboard';
+import GoogleButton from './components/GoogleButton';
 
 function App() {
+  
   return (
       <main>
+        <GoogleButton />
         <Header/>
         <Routes>
           <Route path='/' element={<Home />} exact/>
