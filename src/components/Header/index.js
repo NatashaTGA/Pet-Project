@@ -9,9 +9,8 @@ const Header = () => {
     return (
     <div className='flex justify-between pr-5 pl-5 bg-neutral-700'>
         <div className='container flex items-center h-20' 
-            onClick={() => navigate(`/`)}
-            style={titleStyle}>
-            Crypto App
+            onClick={() => navigate(`/`)}>
+                <h1 className='font-bold text-4xl hover:text-yellow-500 cursor-pointer text-yellow-500'>Crypto App</h1>
         </div>
         <div className='w-28 flex justify-end'>
             <select 
@@ -25,13 +24,6 @@ const Header = () => {
         </div>
     </div>
     );
-}
-
-const titleStyle = {
-    flex: '1',
-    color: 'rgb(225, 174, 6)',
-    fontSize: '7vh',
-    fontWeight: 'bold'
 }
 
 export default Header;

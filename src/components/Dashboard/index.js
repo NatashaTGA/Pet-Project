@@ -23,7 +23,7 @@ const Dashboard = ({ simplified }) => {
 
     return (
         <div className='pr-5 pl-5 bg-neutral-500'>  
-            <div className='pb-6'>
+            <div className='pb-6 pt-6'>
                 <input 
                     placeholder='Search...'
                     onChange={(event) => setSearch(event.target.value)}
