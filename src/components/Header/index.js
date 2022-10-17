@@ -7,8 +7,8 @@ const Header = () => {
     const { currency, setCurrency } = CryptoState();
 
     return (
-    <div className='flex m-5 justify-between'>
-        <div className='container' 
+    <div className='flex justify-between pr-5 pl-5 bg-neutral-700'>
+        <div className='container flex items-center h-20' 
             onClick={() => navigate(`/`)}
             style={titleStyle}>
             Crypto App
@@ -17,6 +17,7 @@ const Header = () => {
             <select 
                 value={currency}
                 onChange={(event) => setCurrency(event.target.value)}
+                className='bg-neutral-700'
                 >
                 <option value="EUR">EUR</option>
                 <option value="USD">USD</option>

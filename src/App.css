@@ -5,10 +5,5 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background-color: rgb(54, 54, 54);
   font-family: 'Inter Tight';
-}
-
-a {
-  text-decoration: none;
 }
