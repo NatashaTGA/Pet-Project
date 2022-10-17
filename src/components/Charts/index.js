@@ -69,12 +69,13 @@ const Charts = ({ id }) => {
             <div className='w-full'>
                 <Line options={options} data={chartsData} className='w-full' />
             </div>
-            <div>
+            <div className='flex justify-between pl-5 mt-14'>
                 {chartDays.map((day) => (
                     <button
                     key={day.value}
                     onClick={() => setDays(day.value)}
-                    selected={day.value === days}>
+                    selected={day.value === days}
+                    className='w-32 h-9 bg-yellow-500 rounded cursor hover:bg-yellow-600'>
                         {day.label}
                     </button>
                 ))}
